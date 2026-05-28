@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4F46E5"/>
+      <stop offset="100%" style="stop-color:#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="fg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#A78BFA"/>
+      <stop offset="100%" style="stop-color:#C4B5FD"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="512" height="512" rx="96" fill="url(#bg)"/>
+  <!-- Inner shape: stylized S + M -->
+  <g transform="translate(256,256)">
+    <!-- S-like curve -->
+    <path d="M-80,-60 C-120,-60 -140,-30 -140,0 C-140,30 -120,50 -80,50 L80,50 C100,50 110,70 100,85 C90,100 70,110 40,110 L-100,110"
+      fill="none" stroke="url(#fg)" stroke-width="52" stroke-linecap="round" stroke-linejoin="round"
+      transform="translate(0,-30)"/>
+    <!-- M-like sharp peaks (simplified as two inverted V's) -->
+    <path d="M-90,10 L-50,-80 L-10,10 L30,-80 L70,10"
+      fill="none" stroke="white" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"
+      opacity="0.85"
+      transform="translate(0,25)"/>
+  </g>
+</svg>

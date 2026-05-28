@@ -1,0 +1,46 @@
+{
+  "name": "skills-manager",
+  "private": true,
+  "version": "1.0.0",
+  "description": "本地可视化管理 AI Skills 工具",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "tauri": "tauri",
+    "desktop": "tauri dev",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "pack": "npm run build && tauri build --debug",
+    "dist:win": "npm run build && tauri build",
+    "dist:linux": "npm run build && tauri build --target x86_64-unknown-linux-gnu",
+    "dist:mac": "npm run build && tauri build --target x86_64-apple-darwin"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.11.0"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.11.2",
+    "@types/diff": "^5.2.1",
+    "@types/js-yaml": "^4.0.9",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.20",
+    "diff": "^7.0.0",
+    "fuse.js": "^7.0.0",
+    "js-yaml": "^4.1.0",
+    "lucide-react": "^0.441.0",
+    "postcss": "^8.4.41",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-markdown": "^9.0.1",
+    "react-router-dom": "^6.26.0",
+    "rehype-raw": "^7.0.0",
+    "rehype-sanitize": "^6.0.0",
+    "remark-gfm": "^4.0.0",
+    "tailwindcss": "^3.4.9",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.0",
+    "zustand": "^4.5.4"
+  }
+}
